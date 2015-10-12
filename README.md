@@ -4,7 +4,7 @@ It is currently in development.
 
 #### Roadmap (How it will work)
 
-Animating the `body` element with handled `element.style`, kind of like injected CSS:
+Animating the `content_box` elements with handled `element.style`, kind of like injected CSS:
 
 ```js
 var variating = zenimate.variating; // An alternate way is to use 'with()'.
@@ -19,5 +19,5 @@ var preset = zenimate({
   font-size: variating.byMotion("onclick 1x transition .1s", ".8em", "1.2em");
 });
 
-preset.animateElement($("#content_box")); // jQuery usage, otherwise document.getElementById
+preset.animateElement($(".content_box")); // jQuery usage, otherwise document.getElementById
 ```
